@@ -1,0 +1,117 @@
+\documentclass[14pt, oneside]{altsu-report}
+
+\worktype{Отчёт по практике на тему:}
+\title{Арканоид}
+\author{М.\,С.~Дягилев}
+\groupnumber{5.205-2}
+\GradebookNumber{1337}
+\supervisor{И.\,А.~Шмаков}
+\supervisordegree{ст.преп.}
+\ministry{Министерство науки и высшего образования}
+\country{Российской Федерации}
+\fulluniversityname{ФГБОУ ВО Алтайский государственный университет}
+\institute{Институт цифровых технологий, электроники и физики}
+\department{Кафедра вычислительной техники и электроники}
+\departmentchief{В.\,В.~Пашнев}
+\departmentchiefdegree{к.ф.-м.н., доцент}
+\shortdepartment{ВТиЭ}
+\abstractRU{ Объект исследования: Разработка игры на Python с использованием PySide6. Цель работы - создание интерактивной игры с использованием инструментов Python и библиотеки PySide6. Метод исследования - разработка игры с применением объектно-ориентированного программирования, графического интерфейса пользователя (GUI) и игровой логики. В ходе работы были использованы следующие аппаратные и программные средства: персональный компьютер с операционной системой Windows 10, Python 3.9+ и PySide6 6.2.4.
+
+Результатом работы является разработанная интерактивная игра с графическим интерфейсом пользователя. Для создания игровых объектов и логики были применены методы объектно-ориентированного программирования. Также были использованы современные методы Python и PySide6 для создания игры.
+
+Основные конструктивные, технологические и технико-эксплуатационные характеристики работы включают использование языка программирования Python 3.9+, библиотеки GUI PySide6 6.2.4, операционной системы Windows 10 и тип игры - 2D аркада.
+
+Разработанная игра может быть использованав качестве развлечения и демонстрация возможностей Python и PySide6. Она является бесплатным продуктом.
+}
+\abstractEN{Большой текст на английском!}
+\keysRU{Python, PySide6, программирование, GUI}
+\keysEN{computer simulation, distributed version control}
+
+\date{\the\year}
+
+% Подключение файлов с библиотекой.
+\addbibresource{graduate-students.bib}
+
+% Пакет для отладки отступов.
+%\usepackage{showframe}
+
+\begin{document}
+\maketitle
+
+\setcounter{page}{2}
+\makeabstract
+\tableofcontents
+
+\chapter*{Введение}
+\phantomsection\addcontentsline{toc}{chapter}{ВВЕДЕНИЕ}
+
+\textbf{Актуальность} 
+\begin{enumerate}
+Процесс создания игры учит основам Python, ООП, алгоритмам, дизайну и другим важным навыкам программирования. Создание игры с помощью PySide6 позволяет ознакомиться с этой библиотекой и научиться создавать красивые и функциональные GUI на Python.
+\end{enumerate}
+
+\textbf{Цель}
+\begin{enumerate}
+Целю игры является создание игры "Арканоид" на языке Python c использованием библиотеки PySide6.
+\end{enumerate}
+
+\textbf{Задачи:}
+\begin{enumerate}
+\item Реализовать игровые элементы:
+\begin{itemize}
+    \item Платформа.
+    \item Мяч.
+    \item Кирпичики.
+\end{itemize}
+\item Игровой процесс
+\begin{itemize}
+    \item Обрабатывать столкновение мяча с платформой и кирпичиками.
+    \item Изменять направление мяча после столкновения.
+    \item Завершать игры после достижении мячом нижней границы.
+    \item Реализовать управление платформой с помощью мыши.
+\end{itemize}
+\item Меню
+\begin{itemize}
+    \item Кнопка "Играть"
+    \item Кнопка "Help"
+\end{itemize}
+\end{enumerate}
+
+% Подключение первой главы (теория):
+\include{chapter-1-report-csae.tex}
+% Подключение второй главы (практическая часть):
+\include{chapter-2-report-csae.tex}
+% Подключение третий главы (практическая часть с тестированием):
+\include{chapter-3-report-csae.tex}
+
+\chapter*{Заключение}
+\phantomsection\addcontentsline{toc}{chapter}{ЗАКЛЮЧЕНИЕ}
+
+\begin{enumerate}
+\item Пример ссылки на электронный источник~\cite{wikiRUArkanoid,wikiRUQtDocumentation,wikiRUHabr}.
+\item Пример ссылки на книгу одного автора~\cite{book1author}.
+\item Пример ссылки на книгу 5-ти и более авторов~\cite{book5author}.
+\end{enumerate}
+
+\newpage
+\phantomsection\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ}
+\printbibliography[title={Список использованной литературы}]
+
+\appendix
+\newpage
+\chapter*{\raggedleft\label{appendix1}Приложение}
+\phantomsection\addcontentsline{toc}{chapter}{ПРИЛОЖЕНИЕ}
+%\section*{\centering\label{code:appendix}Текст программы}
+
+\begin{center}
+\label{code:appendix}Текст программы
+\end{center}
+
+\begin{code}
+\captionof*{listing}{\centering\label{code:pi-example}Пример программы вычисления числа $\pi$ на языке \textit{C} с использованием \textit{MPI} (пример из https://ru.wikipedia
+.org/wiki/Message\_Passing\_Interface)}
+\vspace{-1cm}\inputminted{C}{src/pi-mpi.c}
+\end{code}
+
+\end{document}
+
