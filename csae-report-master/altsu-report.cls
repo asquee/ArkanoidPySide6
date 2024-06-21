@@ -441,8 +441,7 @@
   %  ***
 
   Полный объём работы составляет \formbytotal{TotPages}{страниц}{у}{ы}{}, включая
-  \formbytotal{totalcount@figure}{рисун}{ок}{ка}{ков} и
-  \formbytotal{totalcount@table}{таблиц}{у}{ы}{}.
+  9 рисунков и \formbytotal{totalcount@table}{таблиц}{у}{ы}{}.
   
   \@abstractRU
   
